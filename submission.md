@@ -2,7 +2,7 @@
 #### Reg. No. - 14BCE0607
 #### Project Code - CSE222P163
 
-##### Question 1
+#### Question 1
 Exercise 4.23 asked you to design a program using OpenMP that
 estimated  using the Monte Carlo technique. Examine your solution to
 that program looking for any possible race conditions. If you identify a
@@ -12,7 +12,7 @@ race condition, protect against it using the strategy outlined in Section
 - Estimating Pi using Monte Carlo Technique by parallel execution with use of OpenMP Framework
 - Identifying and protecting against any race conditions
 
-##### Solution `in C code`
+**Solution `in C code`**
 ```
 #include <omp.h>
 #include <stdio.h>
@@ -47,12 +47,19 @@ int main() {
 };
 ```
 
-##### Question 2
+**Output 1**
+![Output 1](pi1.png)
+
+**Output 2**
+![Output 2](pi2.png)
+
+
+#### Question 2
 - Make a Sudoku solution validator using multithreading
 - Make 9 threads for each Box
 - Make 1 thread to verify rows and 1 for column
 
-##### Solution `in Python code`
+**Solution `in Python code`**
 ```
 from threading import Thread, Lock
 from Queue import Queue
@@ -155,12 +162,12 @@ if __name__ == "__main__":
 
 ```
 
-##### Sample Output 1
+**Sample Output 1**
 - When Sudoku solution is correct
 
 ![Output 1](/sudoku1.png)
 
-##### Sample Output 2
+**Sample Output 2**
 - When Sudoku solution is incorrect
 
 ![Output 2](/sudoku2.png)
